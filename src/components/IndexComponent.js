@@ -7,11 +7,11 @@ export default class IndexComponent extends Component {
       <div>
         <h2>首页</h2>
         <ul>
-          <li><a href="">首页</a></li>
-          <li><a href="">博客</a></li>
-          <li><a href="">生活</a></li>
+          <li><a href="/">首页</a></li>
+          <li><a href="/">博客</a></li>
+          <li><a href="/">生活</a></li>
         </ul>
       </div>
-    )
+    );
   }
-};
+}

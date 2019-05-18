@@ -17,7 +17,7 @@ module.exports = merge(common, {
     hot: true
   },
   plugins: [
-    new webpack.NamedModulesPlugin(),      
-		new webpack.HotModuleReplacementPlugin()
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
 });
