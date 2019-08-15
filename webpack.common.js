@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
-const cleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
@@ -20,24 +20,24 @@ module.exports = {
         }
       },
       {
-        test:/\.scss$/,
-        use:[
-          "style-loader",
-          "css-loader",
-          "sass-loader"
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
-        test:/\.(png|svg|jpg|gif)$/,
-        use:[
-          "url-loader"
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'url-loader'
         ]
       },
     ]
   },
   plugins: [
-    new cleanWebpackPlugin(),
-    new htmlWebpackPlugin({
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
       title: 'production',
       template: './index.html',
       hash: true

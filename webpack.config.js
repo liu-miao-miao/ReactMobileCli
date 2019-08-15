@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
-const cleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -40,8 +40,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new cleanWebpackPlugin(),
-    new htmlWebpackPlugin({
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
       title: 'production',
       template: './index.html',
       hash: true

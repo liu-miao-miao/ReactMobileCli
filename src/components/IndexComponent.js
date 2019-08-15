@@ -12,6 +12,6 @@ export default class IndexComponent extends Component {
           <li><a href="">生活</a></li>
         </ul>
       </div>
-    )
+    );
   }
-};
+}

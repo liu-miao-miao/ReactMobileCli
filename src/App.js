@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import IndexComponent from './components/IndexComponent';
-
+import Router from './routers';
+// import './styles/App.scss'
 
 export default class App extends Component {
   render() {
     return (
-      <IndexComponent />
+      <Router />
     )
   }
 };
